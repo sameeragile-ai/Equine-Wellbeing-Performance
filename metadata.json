@@ -1,0 +1,6 @@
+{
+  "name": "Equora - Equine Wellbeing & Performance",
+  "description": "Premium equine wellbeing and stable management platform featuring climate sensing, digital product passports, offline sync, and training logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

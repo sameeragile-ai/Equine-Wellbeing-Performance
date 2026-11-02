@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-equora-forest: #1A3326;
+  --color-equora-forest-light: #244434;
+  --color-equora-forest-dark: #122219;
+  
+  --color-equora-tan: #B07A4A;
+  --color-equora-tan-light: #C99668;
+  --color-equora-tan-dark: #8F5E33;
+  
+  --color-equora-oat: #FBF9F5;
+  --color-equora-cream: #F5F1E8;
+  --color-equora-stone: #E8E2D5;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Safe area insets */
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 12px);
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 12px);
+}
+
+.pb-tab-safe {
+  padding-bottom: calc(max(env(safe-area-inset-bottom, 0px), 16px) + 72px);
+}
+
+/* Hide scrollbar for clean carousels while maintaining touch scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
